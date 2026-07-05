@@ -1,105 +1,95 @@
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Poppins', system-ui, sans-serif; background: #fff; color: #1d1d1f; padding: 32px; }
-  .sway-type h2 { font-family: 'Poppins', system-ui, sans-serif; font-size: 22px; font-weight: 700; margin-bottom: 20px; color: #000; }
-  .sway-type h3 { font-family: 'Poppins', system-ui, sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #6e6e73; margin: 28px 0 10px; }
-  .sway-type p { font-family: 'Poppins', system-ui, sans-serif; font-size: 13px; color: #6e6e73; margin-bottom: 16px; letter-spacing: -0.1px; }
-  .sway-type table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-family: 'Poppins', system-ui, sans-serif; font-size: 13px; }
-  .sway-type th { text-align: left; padding: 10px 12px; background: #f5f5f7; color: #6e6e73; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid rgba(0,0,0,0.06); }
-  .sway-type td { padding: 10px 12px; border-bottom: 1px solid rgba(0,0,0,0.06); color: #1d1d1f; }
-  .sway-type .icon { font-family: 'SF Mono', Menlo, monospace; font-size: 11px; background: #f5f5f7; padding: 2px 8px; border-radius: 4px; color: #000; white-space: nowrap; }
-  .sway-type .section { margin-bottom: 32px; }
-  .sway-type hr { border: none; border-top: 1px solid rgba(0,0,0,0.06); margin: 32px 0; }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+  .sway-icon { font-family:'Open Sans',system-ui,sans-serif; color:#1d1d1f; }
+  .sway-icon h3 { font-family:'Poppins',system-ui,sans-serif; font-size:13px; font-weight:700;
+    text-transform:uppercase; letter-spacing:.06em; color:#6e6e73; margin:26px 0 12px; }
+  .sway-icon h3:first-child { margin-top:0; }
+  .sway-icon p { font-size:13px; line-height:1.55; color:#1d1d1f; margin:0 0 14px; }
+  .sway-icon .sway-table { width:100%; border-collapse:collapse; font-size:13px; margin-bottom:20px; background:#fff;
+    border:1px solid rgba(0,0,0,.08); border-radius:12px; overflow:hidden; }
+  .sway-icon .sway-table th { font-family:'Poppins',system-ui,sans-serif; font-weight:600; font-size:11px;
+    text-transform:uppercase; letter-spacing:.06em; color:#6e6e73; text-align:left; padding:10px 14px;
+    background:#f5f5f7; border-bottom:1px solid rgba(0,0,0,.08); }
+  .sway-icon .sway-table td { padding:10px 14px; border-bottom:1px solid rgba(0,0,0,.06); }
+  .sway-icon .sway-table tr:last-child td { border-bottom:none; }
+  .sway-icon .sway-tag { display:inline-block; background:#f5f5f7; font-family:'SF Mono',Menlo,monospace;
+    font-size:11px; padding:2px 8px; border-radius:4px; color:#1d1d1f; }
 </style>
 
-<div class="sway-type">
-  <h2>4. Iconografía</h2>
+<div class="sway-icon">
+  <p>Librería: <span class="sway-tag">@expo/vector-icons</span> — <strong>Ionicons</strong></p>
 
-  <p>Librería: <span class="icon">@expo/vector-icons</span> — Ionicons</p>
+  <h3>Navegación (Tabs)</h3>
+  <table class="sway-table">
+    <tr><th>Icono</th><th>Pantalla</th></tr>
+    <tr><td><span class="sway-tag">apps-outline</span></td><td>Catálogo (Tab 1)</td></tr>
+    <tr><td><span class="sway-tag">fish-outline</span></td><td>Animales (Tab 2)</td></tr>
+    <tr><td><span class="sway-tag">binoculars-outline</span></td><td>Avistamientos (Tab 3)</td></tr>
+    <tr><td><span class="sway-tag">calendar-outline</span></td><td>Eventos (Tab 4)</td></tr>
+    <tr><td><span class="sway-tag">person-outline</span></td><td>Perfil (Tab 5)</td></tr>
+  </table>
 
-  <div class="section">
-    <h3>Iconos de Navegación (Tabs)</h3>
-    <table>
-      <tr><th>Icono</th><th>Pantalla</th></tr>
-      <tr><td><span class="icon">apps-outline</span></td><td>Catálogo (Tab 1)</td></tr>
-      <tr><td><span class="icon">fish-outline</span></td><td>Animales (Tab 2)</td></tr>
-      <tr><td><span class="icon">binoculars-outline</span></td><td>Avistamientos (Tab 3)</td></tr>
-      <tr><td><span class="icon">calendar-outline</span></td><td>Eventos (Tab 4)</td></tr>
-      <tr><td><span class="icon">person-outline</span></td><td>Perfil (Tab 5)</td></tr>
-    </table>
-  </div>
+  <h3>Acción</h3>
+  <table class="sway-table">
+    <tr><th>Icono</th><th>Acción</th></tr>
+    <tr><td><span class="sway-tag">search / search-outline</span></td><td>Buscar</td></tr>
+    <tr><td><span class="sway-tag">close-circle / close</span></td><td>Cerrar / Limpiar</td></tr>
+    <tr><td><span class="sway-tag">chevron-back</span></td><td>Retroceder</td></tr>
+    <tr><td><span class="sway-tag">add-circle-outline</span></td><td>Nuevo / Agregar</td></tr>
+    <tr><td><span class="sway-tag">eye-outline</span></td><td>Ver detalle</td></tr>
+    <tr><td><span class="sway-tag">pencil-outline</span></td><td>Editar</td></tr>
+    <tr><td><span class="sway-tag">trash-outline</span></td><td>Eliminar</td></tr>
+    <tr><td><span class="sway-tag">copy-outline</span></td><td>Duplicar</td></tr>
+    <tr><td><span class="sway-tag">cloud-upload-outline</span></td><td>Publicar</td></tr>
+    <tr><td><span class="sway-tag">share-outline</span></td><td>Compartir</td></tr>
+    <tr><td><span class="sway-tag">refresh-outline</span></td><td>Reenviar</td></tr>
+    <tr><td><span class="sway-tag">checkmark</span></td><td>Guardar</td></tr>
+    <tr><td><span class="sway-tag">checkmark-done-outline</span></td><td>Marcar todas como leídas</td></tr>
+    <tr><td><span class="sway-tag">log-out-outline</span></td><td>Cerrar sesión</td></tr>
+    <tr><td><span class="sway-tag">notifications-outline</span></td><td>Campana de notificaciones</td></tr>
+  </table>
 
-  <div class="section">
-    <h3>Iconos de Acción</h3>
-    <table>
-      <tr><th>Icono</th><th>Acción</th></tr>
-      <tr><td><span class="icon">search / search-outline</span></td><td>Buscar</td></tr>
-      <tr><td><span class="icon">close-circle / close</span></td><td>Cerrar / Limpiar</td></tr>
-      <tr><td><span class="icon">chevron-back</span></td><td>Retroceder</td></tr>
-      <tr><td><span class="icon">add-circle-outline</span></td><td>Nuevo / Agregar</td></tr>
-      <tr><td><span class="icon">eye-outline</span></td><td>Ver detalle</td></tr>
-      <tr><td><span class="icon">pencil-outline</span></td><td>Editar</td></tr>
-      <tr><td><span class="icon">trash-outline</span></td><td>Eliminar</td></tr>
-      <tr><td><span class="icon">copy-outline</span></td><td>Duplicar</td></tr>
-      <tr><td><span class="icon">cloud-upload-outline</span></td><td>Publicar</td></tr>
-      <tr><td><span class="icon">share-outline</span></td><td>Compartir</td></tr>
-      <tr><td><span class="icon">refresh-outline</span></td><td>Reenviar</td></tr>
-      <tr><td><span class="icon">checkmark</span></td><td>Guardar</td></tr>
-      <tr><td><span class="icon">checkmark-done-outline</span></td><td>Marcar todas como leídas</td></tr>
-      <tr><td><span class="icon">log-out-outline</span></td><td>Cerrar sesión</td></tr>
-      <tr><td><span class="icon">notifications-outline</span></td><td>Campana de notificaciones</td></tr>
-    </table>
-  </div>
+  <h3>Información (detalle de especie)</h3>
+  <table class="sway-table">
+    <tr><th>Icono</th><th>Significado</th></tr>
+    <tr><td><span class="sway-tag">water</span></td><td>Hábitat acuático</td></tr>
+    <tr><td><span class="sway-tag">shield</span></td><td>Protección / Estado</td></tr>
+    <tr><td><span class="sway-tag">boat</span></td><td>Avistamiento en barco</td></tr>
+    <tr><td><span class="sway-tag">skull</span></td><td>Especie en peligro</td></tr>
+    <tr><td><span class="sway-tag">sparkles</span></td><td>Especie destacada</td></tr>
+    <tr><td><span class="sway-tag">airplane</span></td><td>Migración</td></tr>
+    <tr><td><span class="sway-tag">snow</span></td><td>Aguas frías</td></tr>
+    <tr><td><span class="sway-tag">rose</span></td><td>Especie única</td></tr>
+    <tr><td><span class="sway-tag">paw</span></td><td>Mamífero marino</td></tr>
+    <tr><td><span class="sway-tag">moon</span></td><td>Hábitat nocturno</td></tr>
+  </table>
 
-  <div class="section">
-    <h3>Iconos de Información (Detalle de Especie)</h3>
-    <table>
-      <tr><th>Icono</th><th>Significado</th></tr>
-      <tr><td><span class="icon">water</span></td><td>Hábitat acuático</td></tr>
-      <tr><td><span class="icon">shield</span></td><td>Protección / Estado</td></tr>
-      <tr><td><span class="icon">boat</span></td><td>Avistamiento en barco</td></tr>
-      <tr><td><span class="icon">skull</span></td><td>Especie en peligro</td></tr>
-      <tr><td><span class="icon">sparkles</span></td><td>Especie destacada</td></tr>
-      <tr><td><span class="icon">airplane</span></td><td>Migración</td></tr>
-      <tr><td><span class="icon">snow</span></td><td>Aguas frías</td></tr>
-      <tr><td><span class="icon">rose</span></td><td>Especie única</td></tr>
-      <tr><td><span class="icon">paw</span></td><td>Mamífero marino</td></tr>
-      <tr><td><span class="icon">moon</span></td><td>Hábitat nocturno</td></tr>
-    </table>
-  </div>
+  <h3>Notificación</h3>
+  <table class="sway-table">
+    <tr><th>Icono</th><th>Tipo</th></tr>
+    <tr><td><span class="sway-tag">binoculars</span></td><td>Avistamiento (sighting)</td></tr>
+    <tr><td><span class="sway-tag">calendar</span></td><td>Evento (event)</td></tr>
+    <tr><td><span class="sway-tag">trophy</span></td><td>Logro / Insignia (badge)</td></tr>
+    <tr><td><span class="sway-tag">megaphone</span></td><td>Sistema (system)</td></tr>
+  </table>
 
-  <div class="section">
-    <h3>Iconos de Notificación</h3>
-    <table>
-      <tr><th>Icono</th><th>Tipo</th></tr>
-      <tr><td><span class="icon">binoculars</span></td><td>Avistamiento (sighting)</td></tr>
-      <tr><td><span class="icon">calendar</span></td><td>Evento (event)</td></tr>
-      <tr><td><span class="icon">trophy</span></td><td>Logro / Insignia (badge)</td></tr>
-      <tr><td><span class="icon">megaphone</span></td><td>Sistema (system)</td></tr>
-    </table>
-  </div>
+  <h3>Perfil y badges</h3>
+  <table class="sway-table">
+    <tr><th>Icono</th><th>Significado</th></tr>
+    <tr><td><span class="sway-tag">leaf-outline</span></td><td>Especies registradas</td></tr>
+    <tr><td><span class="sway-tag">compass-outline</span></td><td>Explorador inicial</td></tr>
+    <tr><td><span class="sway-tag">water-outline</span></td><td>Guardián del océano</td></tr>
+    <tr><td><span class="sway-tag">flower-outline</span></td><td>Coleccionista</td></tr>
+    <tr><td><span class="sway-tag">lock-closed-outline</span></td><td>Badge bloqueado</td></tr>
+  </table>
 
-  <div class="section">
-    <h3>Iconos de Perfil y Badges</h3>
-    <table>
-      <tr><th>Icono</th><th>Significado</th></tr>
-      <tr><td><span class="icon">leaf-outline</span></td><td>Especies registradas</td></tr>
-      <tr><td><span class="icon">compass-outline</span></td><td>Badge: Explorador inicial</td></tr>
-      <tr><td><span class="icon">water-outline</span></td><td>Badge: Guardián del océano</td></tr>
-      <tr><td><span class="icon">flower-outline</span></td><td>Badge: Coleccionista</td></tr>
-      <tr><td><span class="icon">lock-closed-outline</span></td><td>Badge bloqueado</td></tr>
-    </table>
-  </div>
-
-  <div class="section">
-    <h3>Iconos de Formulario</h3>
-    <table>
-      <tr><th>Icono</th><th>Campo</th></tr>
-      <tr><td><span class="icon">camera / camera-outline</span></td><td>Fotografía</td></tr>
-      <tr><td><span class="icon">location-outline</span></td><td>Ubicación</td></tr>
-      <tr><td><span class="icon">time-outline</span></td><td>Hora</td></tr>
-      <tr><td><span class="icon">people-outline</span></td><td>Participantes</td></tr>
-      <tr><td><span class="icon">create-outline</span></td><td>Nuevo registro</td></tr>
-    </table>
-  </div>
+  <h3>Formulario</h3>
+  <table class="sway-table">
+    <tr><th>Icono</th><th>Campo</th></tr>
+    <tr><td><span class="sway-tag">camera / camera-outline</span></td><td>Fotografía</td></tr>
+    <tr><td><span class="sway-tag">location-outline</span></td><td>Ubicación</td></tr>
+    <tr><td><span class="sway-tag">time-outline</span></td><td>Hora</td></tr>
+    <tr><td><span class="sway-tag">people-outline</span></td><td>Participantes</td></tr>
+    <tr><td><span class="sway-tag">create-outline</span></td><td>Nuevo registro</td></tr>
+  </table>
 </div>
